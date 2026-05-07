@@ -1,0 +1,8 @@
+<svg width="900" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M112 26L168 58V126L112 194L56 126V58L112 26Z" stroke="#E8EEF7" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M112 26V194M56 58L168 126M168 58L56 126" stroke="#E8EEF7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M78 80L112 104L146 80M78 116L112 146L146 116" stroke="#E8EEF7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.92"/>
+  <circle cx="112" cy="110" r="17" fill="#22D3C5" stroke="#0D1117" stroke-width="7"/>
+  <text x="220" y="104" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="62" font-weight="820" letter-spacing="0">OfflineNode</text>
+  <text x="224" y="156" fill="#A7B0BE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="820" letter-spacing="8">TECH STUDIO</text>
+</svg>

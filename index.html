@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeamDocs - Private Android PDF scanner</title>
+    <meta
+      name="description"
+      content="BeamDocs is a private Android PDF scanner for everyday documents. Scan, OCR, organize and sign PDFs locally on your device."
+    >
+    <meta
+      name="keywords"
+      content="BeamDocs, Android PDF scanner, private document scanner, offline PDF scanner, local OCR, no cloud scanner, OfflineNode"
+    >
+    <meta name="author" content="OfflineNode">
+    <meta name="theme-color" content="#0D1117">
+    <meta property="og:title" content="BeamDocs - Private Android PDF scanner">
+    <meta
+      property="og:description"
+      content="Scan, OCR, organize and sign everyday documents locally on your Android device."
+    >
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-hero" id="top">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="BeamDocs home">
+          <img class="brand-mark" src="assets/offlinenode-mark.svg" alt="" aria-hidden="true">
+          <span>BeamDocs</span>
+        </a>
+        <div class="nav-links" aria-label="Page sections">
+          <a href="#privacy" data-nav-section="privacy">Privacy</a>
+          <a href="#workflow" data-nav-section="workflow">How it works</a>
+          <a href="#pricing" data-nav-section="pricing">Free vs Pro</a>
+          <a href="privacy.html">Policy</a>
+        </div>
+      </nav>
+
+      <main class="hero-grid">
+        <section class="hero-copy" aria-labelledby="hero-title">
+          <p class="eyebrow">Private Android PDF scanner</p>
+          <h1 id="hero-title">BeamDocs</h1>
+          <p class="hero-subtitle">
+            Scan invoices, receipts, contracts and everyday paperwork into PDFs
+            that stay on your device. No account, no document cloud, no ads.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="store-button"
+              href="https://play.google.com/store/apps/details?id=com.rafaelpaula.beamdocs"
+              aria-label="Get BeamDocs on Google Play"
+            >
+              <span class="play-icon" aria-hidden="true"></span>
+              <span>
+                <small>Get BeamDocs</small>
+                Google Play
+              </span>
+            </a>
+            <a class="text-link" href="privacy.html">Read privacy policy</a>
+          </div>
+          <div class="hero-signals" aria-label="BeamDocs highlights">
+            <span>No account</span>
+            <span>Local OCR</span>
+            <span>PDF signatures</span>
+          </div>
+        </section>
+
+        <div class="phone-stage" aria-label="BeamDocs app preview">
+          <img
+            class="phone-mockup"
+            src="assets/beamdocs-app-mockup.svg"
+            alt="BeamDocs app screen showing scanned documents"
+          >
+        </div>
+      </main>
+    </header>
+
+    <section class="section privacy-glance reveal" id="privacy">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <p class="eyebrow dark">Privacy at a glance</p>
+          <h2>Your documents stay with you.</h2>
+        </div>
+        <div class="glance-grid">
+          <article>
+            <span class="feature-icon">01</span>
+            <h3>No account</h3>
+            <p>BeamDocs does not require registration before you can scan and save documents.</p>
+          </article>
+          <article>
+            <span class="feature-icon">02</span>
+            <h3>No document cloud</h3>
+            <p>Scans, PDFs, OCR text, folders and Smart Organization choices are stored locally.</p>
+          </article>
+          <article>
+            <span class="feature-icon">03</span>
+            <h3>Local processing</h3>
+            <p>OCR and organization happen on your device. Document contents are not sent to OfflineNode.</p>
+          </article>
+          <article>
+            <span class="feature-icon">04</span>
+            <h3>Your choice to share</h3>
+            <p>If you send a PDF to email or cloud storage, that happens outside BeamDocs and only when you choose it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow reveal" id="workflow">
+      <div class="section-inner workflow-layout interactive-workflow">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow dark">Workflow</p>
+          <h2>From paper to organized PDF in a few calm steps.</h2>
+        </div>
+        <div class="workflow-console">
+          <div class="step-list" role="tablist" aria-label="BeamDocs workflow">
+            <button class="step-row active" type="button" role="tab" aria-selected="true" aria-controls="workflow-preview" data-step="scan">
+              <span class="step-index">1</span>
+              <span class="step-copy">
+                <strong>Scan</strong>
+                <small>Capture everyday paperwork and save it as a clean PDF.</small>
+              </span>
+            </button>
+            <button class="step-row" type="button" role="tab" aria-selected="false" aria-controls="workflow-preview" data-step="review">
+              <span class="step-index">2</span>
+              <span class="step-copy">
+                <strong>Review</strong>
+                <small>Rename the document, check OCR status and choose the right folder before saving.</small>
+              </span>
+            </button>
+            <button class="step-row" type="button" role="tab" aria-selected="false" aria-controls="workflow-preview" data-step="organize">
+              <span class="step-index">3</span>
+              <span class="step-copy">
+                <strong>Organize</strong>
+                <small>Keep receipts, invoices, contracts, tax files and notes in local folders.</small>
+              </span>
+            </button>
+            <button class="step-row" type="button" role="tab" aria-selected="false" aria-controls="workflow-preview" data-step="sign">
+              <span class="step-index">4</span>
+              <span class="step-copy">
+                <strong>Sign or share</strong>
+                <small>Add a saved local signature with Pro, or share a PDF when needed.</small>
+              </span>
+            </button>
+          </div>
+          <aside class="workflow-preview" id="workflow-preview" aria-live="polite">
+            <p class="preview-kicker" data-preview-kicker>Scan</p>
+            <h3 data-preview-title>Paper becomes a PDF.</h3>
+            <p data-preview-body>
+              Start with a receipt, invoice or contract and turn it into a clean local PDF.
+            </p>
+            <div class="preview-frame" aria-hidden="true">
+              <span data-preview-chip>Camera ready</span>
+              <div class="preview-document">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing reveal" id="pricing">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <p class="eyebrow dark">Free vs Pro</p>
+          <h2>Useful for free. Faster when you upgrade.</h2>
+        </div>
+        <div class="pricing-grid">
+          <article class="plan-card">
+            <p class="plan-label">Free</p>
+            <h3>Everyday scanning</h3>
+            <ul class="check-list" aria-label="BeamDocs Free features">
+              <li>1 page per scan</li>
+              <li>Up to 3 folders</li>
+              <li>Manual document names</li>
+              <li>Manual folder assignment</li>
+              <li>Local PDF storage</li>
+            </ul>
+          </article>
+          <article class="plan-card highlighted">
+            <p class="plan-label">Pro</p>
+            <h3>More speed and control</h3>
+            <ul class="check-list" aria-label="BeamDocs Pro features">
+              <li>Multi-page PDFs</li>
+              <li>Unlimited folders</li>
+              <li>Smart Organization</li>
+              <li>Smart names and folder suggestions</li>
+              <li>Local PDF signatures</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-strip reveal">
+      <div class="section-inner strip-grid">
+        <div>
+          <p class="eyebrow">OfflineNode</p>
+          <h2>Quiet Android tools with clear privacy rules.</h2>
+        </div>
+        <div class="strip-actions">
+          <a class="primary-button light" href="privacy.html">Privacy policy</a>
+          <a class="text-link light" href="mailto:beamdocs.app@gmail.com">Contact support</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="support">
+      <div class="section-inner footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top" aria-label="BeamDocs home">
+            <img class="brand-mark" src="assets/offlinenode-mark.svg" alt="" aria-hidden="true">
+            <span>BeamDocs</span>
+          </a>
+          <p>By OfflineNode. Privacy-first Android apps, local-first by default.</p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="mailto:beamdocs.app@gmail.com">beamdocs.app@gmail.com</a>
+          <span>Made in Germany</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

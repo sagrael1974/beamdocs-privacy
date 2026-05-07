@@ -1,0 +1,169 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#0B1220" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0B1220" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF3F8"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00A7A5"/>
+      <stop offset="1" stop-color="#2F80ED"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #F6F7F9; }
+      .ink { fill: #16202E; font-family: Inter, Segoe UI, Arial, sans-serif; }
+      .muted { fill: #677384; font-family: Inter, Segoe UI, Arial, sans-serif; }
+      .tiny { font-size: 28px; }
+      .body { font-size: 34px; }
+      .label { font-size: 30px; font-weight: 650; }
+      .title { font-size: 52px; font-weight: 750; letter-spacing: 0; }
+      .headline { font-size: 40px; font-weight: 720; }
+      .card { fill: #FFFFFF; stroke: #E3E8EF; stroke-width: 2; filter: url(#cardShadow); }
+      .chip { fill: #FFFFFF; stroke: #D7DEE8; stroke-width: 2; }
+      .chipActive { fill: #E8F7F6; stroke: #00A7A5; stroke-width: 2; }
+      .divider { stroke: #E6EBF2; stroke-width: 2; }
+      .icon { stroke: #243044; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .iconMuted { stroke: #677384; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .accent { fill: #00A7A5; }
+      .blue { fill: #2F80ED; }
+      .orange { fill: #F59E0B; }
+      .green { fill: #12B981; }
+      .red { fill: #EF4444; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="1920" class="bg"/>
+
+  <!-- Phone canvas -->
+  <rect x="96" y="54" width="888" height="1812" rx="84" fill="#101826" filter="url(#softShadow)"/>
+  <rect x="124" y="86" width="832" height="1748" rx="58" fill="#F6F7F9"/>
+  <rect x="410" y="112" width="260" height="34" rx="17" fill="#101826" opacity="0.9"/>
+
+  <!-- Status bar -->
+  <text x="176" y="170" class="ink tiny" font-weight="650">09:46</text>
+  <path d="M803 151h44v24h-44z" stroke="#16202E" stroke-width="4" rx="5"/>
+  <path d="M851 159h7v9h-7" stroke="#16202E" stroke-width="4" stroke-linecap="round"/>
+  <rect x="809" y="157" width="28" height="12" rx="3" fill="#16202E"/>
+  <path d="M747 174c12-14 28-14 40 0" stroke="#16202E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M761 164c4-5 9-7 14-7s10 2 14 7" stroke="#16202E" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- App top area -->
+  <text x="176" y="256" class="ink title">BeamDocs</text>
+  <text x="176" y="300" class="muted body">Private document desk</text>
+
+  <!-- Settings button -->
+  <rect x="828" y="212" width="72" height="72" rx="24" fill="#FFFFFF" stroke="#E3E8EF" stroke-width="2"/>
+  <circle cx="864" cy="248" r="10" class="iconMuted"/>
+  <path d="M864 224v8M864 264v8M840 248h8M880 248h8M847 231l6 6M875 259l6 6M881 231l-6 6M853 259l-6 6" class="iconMuted"/>
+
+  <!-- Search bar -->
+  <rect x="176" y="342" width="724" height="82" rx="26" fill="#FFFFFF" stroke="#DDE4EE" stroke-width="2"/>
+  <circle cx="220" cy="383" r="15" class="iconMuted"/>
+  <path d="M232 395l18 18" class="iconMuted"/>
+  <text x="272" y="395" class="muted body">Search PDFs, OCR text...</text>
+
+  <!-- Stats strip -->
+  <rect x="176" y="456" width="724" height="134" rx="28" fill="#16202E"/>
+  <circle cx="238" cy="523" r="34" fill="#243044"/>
+  <path d="M225 523h26M238 510v26" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <text x="294" y="512" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">128 documents</text>
+  <text x="294" y="554" fill="#AAB5C4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">24 processed with OCR</text>
+  <rect x="710" y="494" width="146" height="56" rx="18" fill="#E8F7F6"/>
+  <text x="747" y="532" fill="#007D7B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="750">PRO</text>
+
+  <!-- Folder chips -->
+  <text x="176" y="660" class="ink headline">Folders</text>
+  <rect x="176" y="696" width="128" height="60" rx="22" class="chipActive"/>
+  <text x="214" y="735" fill="#007D7B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">All</text>
+  <rect x="320" y="696" width="198" height="60" rx="22" class="chip"/>
+  <path d="M352 717h28l8 9h54v25h-90z" stroke="#677384" stroke-width="4" fill="none" stroke-linejoin="round"/>
+  <text x="408" y="735" class="muted tiny" font-weight="650">Invoices</text>
+  <rect x="534" y="696" width="166" height="60" rx="22" class="chip"/>
+  <path d="M565 717h28l8 9h38v25h-74z" stroke="#677384" stroke-width="4" fill="none" stroke-linejoin="round"/>
+  <text x="626" y="735" class="muted tiny" font-weight="650">Taxes</text>
+  <rect x="716" y="696" width="184" height="60" rx="22" class="chip"/>
+  <path d="M746 717h28l8 9h48v25h-84z" stroke="#677384" stroke-width="4" fill="none" stroke-linejoin="round"/>
+  <text x="810" y="735" class="muted tiny" font-weight="650">Contracts</text>
+
+  <!-- Toolbar -->
+  <text x="176" y="842" class="ink headline">Recent</text>
+  <rect x="658" y="795" width="106" height="58" rx="20" fill="#FFFFFF" stroke="#DDE4EE" stroke-width="2"/>
+  <path d="M690 815h42M700 829h22M706 843h10" class="iconMuted"/>
+  <rect x="780" y="795" width="120" height="58" rx="20" fill="#FFFFFF" stroke="#DDE4EE" stroke-width="2"/>
+  <path d="M816 814v32M816 846l-12-12M816 846l12-12M852 846v-32M852 814l-12 12M852 814l12 12" class="iconMuted"/>
+
+  <!-- OCR processing notice -->
+  <rect x="176" y="876" width="724" height="86" rx="24" fill="#FFF8E7" stroke="#F7D891" stroke-width="2"/>
+  <circle cx="222" cy="919" r="18" fill="#F59E0B" opacity="0.18"/>
+  <path d="M222 905v15l10 7" stroke="#B77905" stroke-width="5" stroke-linecap="round"/>
+  <text x="264" y="911" fill="#7A4D00" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">OCR running for 3 documents</text>
+  <text x="264" y="946" fill="#9A6800" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">Search results may improve shortly.</text>
+
+  <!-- Document card 1 -->
+  <rect x="176" y="1000" width="724" height="174" rx="28" class="card"/>
+  <rect x="206" y="1030" width="108" height="132" rx="16" fill="url(#paperGrad)" stroke="#DDE4EE" stroke-width="2"/>
+  <rect x="224" y="1052" width="70" height="8" rx="4" fill="#AAB5C4"/>
+  <rect x="224" y="1074" width="58" height="7" rx="3.5" fill="#D0D7E2"/>
+  <rect x="224" y="1096" width="72" height="7" rx="3.5" fill="#D0D7E2"/>
+  <rect x="224" y="1128" width="46" height="18" rx="5" fill="#00A7A5" opacity="0.18"/>
+  <text x="342" y="1058" class="ink label">May invoice.pdf</text>
+  <text x="342" y="1100" class="muted tiny">Today, 09:42  -  3 pages</text>
+  <rect x="342" y="1122" width="124" height="40" rx="14" fill="#E9F8F1"/>
+  <circle cx="366" cy="1142" r="9" class="green"/>
+  <text x="386" y="1152" fill="#0B7A53" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">OCR ready</text>
+  <circle cx="840" cy="1087" r="24" fill="#F3F6FA"/>
+  <path d="M832 1087h16M840 1079v16" class="iconMuted"/>
+
+  <!-- Document card 2 -->
+  <rect x="176" y="1204" width="724" height="174" rx="28" class="card"/>
+  <rect x="206" y="1234" width="108" height="132" rx="16" fill="url(#paperGrad)" stroke="#DDE4EE" stroke-width="2"/>
+  <rect x="224" y="1256" width="68" height="8" rx="4" fill="#AAB5C4"/>
+  <rect x="224" y="1278" width="62" height="7" rx="3.5" fill="#D0D7E2"/>
+  <rect x="224" y="1300" width="76" height="7" rx="3.5" fill="#D0D7E2"/>
+  <rect x="224" y="1332" width="54" height="18" rx="5" fill="#2F80ED" opacity="0.16"/>
+  <text x="342" y="1262" class="ink label">Rental contract.pdf</text>
+  <text x="342" y="1304" class="muted tiny">Yesterday  -  12 pages</text>
+  <rect x="342" y="1326" width="148" height="40" rx="14" fill="#EEF4FF"/>
+  <path d="M366 1338v16M358 1346h16" stroke="#2F80ED" stroke-width="4" stroke-linecap="round"/>
+  <text x="386" y="1356" fill="#2563C7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">searchable</text>
+  <circle cx="840" cy="1291" r="24" fill="#F3F6FA"/>
+  <path d="M832 1291h16M840 1283v16" class="iconMuted"/>
+
+  <!-- Document card 3 -->
+  <rect x="176" y="1408" width="724" height="174" rx="28" class="card"/>
+  <rect x="206" y="1438" width="108" height="132" rx="16" fill="url(#paperGrad)" stroke="#DDE4EE" stroke-width="2"/>
+  <rect x="224" y="1460" width="70" height="8" rx="4" fill="#AAB5C4"/>
+  <rect x="224" y="1482" width="58" height="7" rx="3.5" fill="#D0D7E2"/>
+  <rect x="224" y="1504" width="72" height="7" rx="3.5" fill="#D0D7E2"/>
+  <rect x="224" y="1536" width="46" height="18" rx="5" fill="#EF4444" opacity="0.16"/>
+  <text x="342" y="1466" class="ink label">Insurance.pdf</text>
+  <text x="342" y="1508" class="muted tiny">29 Apr  -  2 pages</text>
+  <rect x="342" y="1530" width="150" height="40" rx="14" fill="#FFF0F0"/>
+  <path d="M366 1540v12M366 1557v1" stroke="#D43C3C" stroke-width="5" stroke-linecap="round"/>
+  <text x="386" y="1560" fill="#B42323" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">OCR retry</text>
+  <circle cx="840" cy="1495" r="24" fill="#F3F6FA"/>
+  <path d="M832 1495h16M840 1487v16" class="iconMuted"/>
+
+  <!-- Bottom navigation -->
+  <rect x="124" y="1664" width="832" height="170" rx="0" fill="#FFFFFF"/>
+  <line x1="124" y1="1664" x2="956" y2="1664" class="divider"/>
+  <g>
+    <circle cx="260" cy="1730" r="28" fill="#E8F7F6"/>
+    <path d="M244 1732l13 13 28-32" stroke="#00A7A5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="216" y="1794" fill="#007D7B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="750">Docs</text>
+  </g>
+  <g>
+    <circle cx="540" cy="1714" r="48" fill="url(#scanGrad)" filter="url(#cardShadow)"/>
+    <path d="M520 1714h40M540 1694v40" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <text x="500" y="1794" class="muted tiny" font-weight="650">Scan</text>
+  </g>
+  <g>
+    <path d="M804 1704h52v42h-52zM812 1704v-15h36v15" class="iconMuted"/>
+    <text x="792" y="1794" class="muted tiny" font-weight="650">More</text>
+  </g>
+</svg>

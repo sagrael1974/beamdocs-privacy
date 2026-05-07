@@ -1,0 +1,6 @@
+<svg width="620" height="128" viewBox="0 0 620 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64 18L102 40V88L64 110L26 88V40L64 18Z" stroke="#E8EEF7" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M64 18V110M26 40L102 88M102 40L26 88" stroke="#E8EEF7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="64" cy="64" r="13" fill="#22D3C5" stroke="#0D1117" stroke-width="6"/>
+  <text x="136" y="82" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="820" letter-spacing="0">OfflineNode</text>
+</svg>
